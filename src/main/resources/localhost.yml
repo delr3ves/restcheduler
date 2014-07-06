@@ -1,0 +1,6 @@
+quartzSettings:
+  instanceName: Restcheduler
+  threadPoolClass: org.quartz.simpl.SimpleThreadPool
+  threadCount: 5
+  threadPriority: 5
+  jobStoreClass: org.quartz.simpl.RAMJobStore
