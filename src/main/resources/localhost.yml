@@ -1,6 +1,14 @@
 quartzSettings:
-  instanceName: Restcheduler
-  threadPoolClass: org.quartz.simpl.SimpleThreadPool
-  threadCount: 5
-  threadPriority: 5
-  jobStoreClass: org.quartz.simpl.RAMJobStore
+  dbParams:
+    driverClass: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/restcheduler
+    user: restcheduler
+    password: r3stch3d_l3r
+    properties:
+      charSet: UTF-8
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    maxWaitForConnection: 1s
+    validationQuery: "/* MyApplication Health Check */ SELECT 1"
+    minSize: 8
+    maxSize: 32
+    checkConnectionWhileIdle: false
