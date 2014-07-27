@@ -6,6 +6,5 @@ install: echo "I trust Maven."
 script: mvn clean verify
 
 jdk:
-  - oraclejdk6
   - oraclejdk7
   - oraclejdk8
